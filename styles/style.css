@@ -69,8 +69,21 @@ header{
 .menu-list li a{
     text-decoration: none;
     font-weight: 600;
+    padding: 5px;
 }
-
+.menu-list li i{
+    padding: 5px;
+}
+.menu-list li a:hover{
+    color: #FFF;
+    background-color: #3A3A3A;
+    border-radius: 10px;
+}
+.menu-list li i:hover{
+    color: #FFF;
+    background-color: #3A3A3A;
+    border-radius: 12px;
+}
 /* ---------------
     section one 
 ----------------*/
@@ -147,6 +160,9 @@ header{
     margin-bottom: 30px;
     padding:  14px 17px 17px 16px;
 }
+.collection img:hover{
+    transform: scale(1.05);
+}
 .rating .rating-point{
     color: #5E6366;
     font-size: 16px;
@@ -171,15 +187,6 @@ header{
     section three
  ------------------*/
 
- /* .trending-sale{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin-top: 50px;
- } */
- /* .trending-sale img{
-     width: 60%;
-
- } */
  .trending{
     display: flex;
     justify-content: center;
@@ -267,9 +274,9 @@ footer{
     background-position: center;
 }
 
-/*----------------
-    responsive 
-----------------*/
+/*--------------------
+    responsive start
+--------------------*/
 
 @media (max-width: 688px){
     .container{
@@ -291,8 +298,13 @@ footer{
     .welcome-text h1{
         font-size: 30px;
     }
+    .gadget{
+    background-size: 76%;
+    padding-bottom: 85px;
+    }
     .gadget img{
-        width: 100%;
+        width: 70%;
+        height: 100%;
     }
     .company{
         display: grid;
@@ -325,3 +337,54 @@ footer{
         top: 5px;
     }
 }
+
+@media (min-width: 688px) and (max-width: 992px){
+    .container{
+        width: 100%;
+    }
+     .top-section{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .welcome-text{
+        order: 2;
+    }
+    .welcome-text h1{
+        font-size: 30px;
+    }
+    .gadget{
+        background-size: 86%;
+        padding-bottom: 95px;
+    }
+    .gadget img{
+        width: 70%;
+        height: 100%;
+    }
+    .company{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: repeat(2,100px);
+    }
+    .section-two .top-collections{
+        grid-template-columns: repeat(2,1fr)
+    }
+    .section-two a:last-child{
+        margin-right: 270px;
+    }
+    .section-three .section-title{
+        text-align: center;
+        text-decoration: underline;
+        padding-top: 20px;
+    }
+    .trending-left{
+        width: 350px;
+        height: 300px;
+        padding: 20px;
+    }
+}
+
+/*--------------------
+    responsive end
+--------------------*/
