@@ -29,6 +29,9 @@ body{
     color: #FB8200;
     font-size: 14px;
 }
+.orangered-color{
+    color: orangered;
+}
 .gray-color{
     color: #18191F;
     font-size: 28px;
@@ -151,3 +154,64 @@ header{
     display: inline;
     padding-left: 10px;
 }
+.section-two a{
+    text-decoration: none;
+    color: #E02C6DDE;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 110px;
+}
+.section-two .fa-arrow-right{
+    padding-left: 7px;
+}
+
+/*------------------
+    section three
+ ------------------*/
+
+ /* .trending-sale{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 50px;
+ } */
+ /* .trending-sale img{
+     width: 60%;
+
+ } */
+ .trending{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .section-three .section-title{
+    margin: 30px;
+    font-size: 28px;
+ }
+.trend-logo{
+     width:2%;
+ }
+ .trending-left{
+    width: 610px;
+    height: 256px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 40px 0px #00000026;
+    padding: 30px;
+    margin-right: 90px;
+ }
+ .trending-left .explore-button{
+     position: relative;
+     top: 18px;
+ }
+ .explore-button img{
+    width: 4%;
+    position: relative;
+    top: 8px;
+    left: 5px;
+     
+ }
+ /* .sale{
+     display: flex;
+     flex-direction: column;
+ } */
