@@ -214,15 +214,114 @@ header{
  }
  .trending-left .explore-button{
      position: relative;
-     top: 18px;
+     top: 12px;
  }
  .explore-button img{
     width: 4%;
     position: relative;
-    top: 8px;
+    top: 7px;
     left: 5px; 
  }
 .sale-right{
     position: relative;
     left: 100px;
+}
+
+/*----------
+    footer 
+------------*/
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #0A0826;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright{
+    width: 262px;
+    height: 100px;
+    color: white;
+    text-align: center;
+}
+.copyright h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+.copyright p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.copyright p:nth-child(2n+1){
+    margin-bottom: 11px;
+}
+.copyright a{
+    width: 32px;
+    height: 32px;
+    color: white;
+    padding: 16px;
+    background-image: url('../resources/logos/BG.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*----------------
+    responsive 
+----------------*/
+
+@media (max-width: 688px){
+    .container{
+        width: 100%;
+    }
+    .menu-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .top-section{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .welcome-text{
+        order: 2;
+    }
+    .welcome-text h1{
+        font-size: 30px;
+    }
+    .gadget img{
+        width: 100%;
+    }
+    .company{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: repeat(2,100px);
+    }
+
+    .section-two .top-collections{
+        grid-template-columns: 1fr;
+    }
+    .section-three .trending{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-three .section-title{
+        text-align: center;
+        text-decoration: underline;
+    }
+    .trending .trending-left{
+        width: 300px;
+        height: 350px;
+        margin-left: 80px;
+    }
+    .sale-right{
+        margin-right: 280px;
+    }
+    .trend-logo{
+        width: 8%;
+        position: relative;
+        top: 5px;
+    }
 }
